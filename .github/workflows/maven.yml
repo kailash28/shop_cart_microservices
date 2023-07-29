@@ -31,3 +31,5 @@ jobs:
       run: mvn -B package --file paymentservice/pom.xml
     - name: Build product service with maven
       run: mvn -B package --file productservice/pom.xml
+    - name: Build order service with maven
+      run: mvn -B package --file orderservice/pom.xml
