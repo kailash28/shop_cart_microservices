@@ -56,6 +56,7 @@ public class PaymentServiceImpl implements PaymentService {
                 = PaymentResponse.builder()
                 .paymentId(transactionDetails.getTransactionId())
                 .paymentMethod(transactionDetails.getPaymentMethod())
+                .referenceNumber(transactionDetails.getReferenceNumber())
                 .time(transactionDetails.getTimeDate())
                 .orderId(transactionDetails.getOrderId())
                 .status(transactionDetails.getPaymentStatus())

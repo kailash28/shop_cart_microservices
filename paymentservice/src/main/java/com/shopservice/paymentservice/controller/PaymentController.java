@@ -33,9 +33,9 @@ public class PaymentController {
     @GetMapping("/order/{orderId}")
     public ResponseEntity<PaymentResponse> getPaymentDetailsByOrderId(@PathVariable long orderId) {
 
-        log.info("PaymentController | doPayment is called");
+        log.info("PaymentController | get details is called");
 
-        log.info("PaymentController | doPayment | orderId : " + orderId);
+        log.info("PaymentController | getDetails | orderId : " + orderId);
 
         return new ResponseEntity<>(
                 paymentService.getPaymentDetailsByOrderId(orderId),

@@ -18,7 +18,7 @@ public class SwaggerConfig {
         contact.setName(CommonConstants.NAME);
 
         Info info = new Info()
-                .title("Product Service API")
+                .title("Payment Service API")
                 .version("1.0")
                 .contact(contact)
                 .description("This API exposes endpoints to manage product service ");
